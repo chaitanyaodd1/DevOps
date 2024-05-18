@@ -1,0 +1,113 @@
+1] Theory: Data Center management, agile ...														15:17 18-05-2024
+2] Theory+lab
+
+1. DevOps + CI/CD : Git+Github , Docker , Kubernetes , Jenkins
+2. Cloud: AWS
+3. Monitoring tools/Automation tools: Chef, Puppet, Nagios, Prometheus
+4. Storage area Networks (SAN)/ Network automation
+````````````````````````````````````````````````````````````````````````````````
+
+
+CI/CD
+'''''
+Continuos Integration and Continuos Development
+
+code -> commit -> |build -> unit test -> Integration test| ->| review -> Staging -> production|
+	   ^      |                                      |   |                                |
+	   |      |        CI Pipeline                   |   |      CD Pipeline               |
+	Related
+	code	
+````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+Tools Used
+::::::::::
+
+
+
+GitHub----->Jenkins -----------------> Ansible --------->Kubernetes
+ |             |                          \             /
+ |             |                           \           /
+ |             |                            \         /
+GIT           Maven                          DockerHub
+````````````````````````````````````````````````````````````````````````````````````````````````````
+GIT & Github
+::::::::::::
+
+Version Control: Version control, also known as source control, is the practice of tracking and managing 
+'''''''''''''''	 changes to software code. Version control systems are software tools that help software 
+		 teams manage changes to source code over time.
+
+Repository: A Centralised storage for managing and tracking changes to the collection of the files and
+	    directories.
+
+			Developer push the code to a repository
+					||
+			code will be deployed from the repository
+
+	•) now if someone wants the code he/she will have to fetch the code from Repository
+						||
+					      modify
+						||
+					Push back to repository
+
+•) Types of version Control system
+
+1. Centralised							2. Distributed
+
+
+
+
+
+
+-----------------------------------------------------------------------------
+
+•] Git and Github parts
+   ````````````````````                                 |         ••
+workspace ----> staging/indexing ----> Local Repository |    •   Remote    •
+		     area			        |     •Repository •
+                 						  ••
+
+•)Workspace- Area where the Developer is working and creating/modifying code.
+•)Inex/staging area - Area that closely mimics the local repo.
+•)local repo - the local area for all the local code.
+•)remote repo- the remote area {GitHub} for all the code.	
+
+Git Workflow -1
+
+• git init: Git will create "Workspace"
+** never do "git init" in a sub-dir of directory where "git init" is already initialised
+• git add file1: Add the to  the "Staging area"
+•git commit:
+•git push: the changes will go to the "Remote Repository"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
