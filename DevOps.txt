@@ -78,8 +78,22 @@ Git Workflow -1
 • git init: Git will create "Workspace"
 ** never do "git init" in a sub-dir of directory where "git init" is already initialised
 • git add file1: Add the to  the "Staging area"
-•git commit:
-•git push: the changes will go to the "Remote Repository"
+• git commit:
+• git push: the changes will go to the "Remote Repository"
+
+Git CMDS
+''''''''
+• git clone
+• git init
+• git add
+• git commit -m "message"
+• git config --global user.name "username"
+• git config --global user.email "email@user"
+• git branch -M main
+• git remote add origin (repo URl)
+• git push -u origin main
+
+
 
 
 
