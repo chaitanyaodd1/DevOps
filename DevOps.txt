@@ -92,6 +92,92 @@ Git CMDS
 • git branch -M main
 • git remote add origin (repo URl)
 • git push -u origin main
+`````````````````````````````````````````````````````````````````````````````````````````````````````````````````
+
+
+Docker and Containerization
+:::::::::::::::::::::::::::
+
+Container technology: It refers to a lightweight, executable unit of software that packages up 
+		      application code and its dependencies.
+Containerization:Containerization refers to the process of packaging software code along with 
+		 its necessary dependencies (such as operating system libraries) into a single 
+		 lightweight executable unit called a container.
+
+~~~Image and Conatiner
+   ```````````````````
+•)Build: Create an image.
+•)Run: run the image as a conatiner.
+|__________________________________________________|
+|Docker Build --->Image--->Docker Run--->Conatiner |
+|  Command		   Command                 |
+|--------------------------------------------------|
+
+•)conatiner = lightweight
+
+ Container--->¦•App		   ¦	
+	      ¦•Lib		   ¦  
+	      ¦•linux user space   ¦
+              ----------------------
+	      ¦•Docker linux kernal¦
+	      ``````````````````````
+	      •Host OS
+	      •Hardware
+
+
+⁂ DOCKER
+'''''''''
+• Docker is an open-source platform that enables developers to build,
+  deploy, run, update, and manage standardized, executable components
+  called containers. These containers combine application source code 
+  with the necessary operating system libraries and dependencies 
+  required to run that code in any environment.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
