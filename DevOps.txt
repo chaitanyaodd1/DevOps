@@ -121,18 +121,53 @@ Containerization:Containerization refers to the process of packaging software co
               ----------------------
 	      ¦•Docker linux kernal¦
 	      ``````````````````````
-	      •Host OS
-	      •Hardware
+	       •Host OS
+	       •Hardware
 
 
 ⁂ DOCKER
 '''''''''
-• Docker is an open-source platform that enables developers to build,
-  deploy, run, update, and manage standardized, executable components
-  called containers. These containers combine application source code 
-  with the necessary operating system libraries and dependencies 
-  required to run that code in any environment.
+• Docker is an open-source platform that enables developers to build, deploy, run, update, and manage standardized,
+  executable components called containers. These containers combine application source code with the necessary 
+  operating system libraries and dependencies required to run that code in any environment.
 
+
+• Runs as an application in a sandbox.
+• It's PORTABLE.
+• We can reun several conatainers on a machine at the same time.
+• Self-conatined: do not alter host system.
+•"IF SOMETHING WORKS IN DEVELOPMENT, IT WILL WORK IN PRODUCTION"
+
+
+
+Commands:
+'''''''''
+
+
+•docker run <CONATAINER> : Container will start and immediatly stop automatically.
+•docker run -dit <CONATAINER>:Conatiner will stat and keep running in the background(detached)... To stop this, we will 
+			     need to use docker conatainer stop command
+•docker run -it <CONATAINER>:Container will start in an interactive terminal mode (it will open a 
+			    shell inside the conatainer)... To stop this, we will need to use exit 
+			    command.	
+•docker container list: list of all conatiners.
+•docker ps: list of running conatiners.
+•docker stop <ID>or <NAME>
+•docker images or docker image list : see the list of image.
+•docker inspect: Inspect a conatiner
+•docker pull : pull an image(From dockerhub)
+•docker history<image>: how was the images created.
+•docker tag
+
+
+Types of conatiner that we run:
+``````````````````````````````````
+
+1. General-purpose/long time running: Debian/ubuntu/....,
+   tomcat, mysql,....
+   => use '-it'
+2. One-time/Short term: "Hello World"
+   => Not use '-it'
 
 
 
