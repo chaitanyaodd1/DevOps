@@ -46,4 +46,13 @@ Commands:
 
 •docker run --name <name-of-conatiner> -d -p 8080:80 image {like nginx, tomcat, portainer...}: map the conatainer's internal port 
                          								       80 to the external port 8080. It 
- means that whatever requests we sent on our local machine's port 8080 will be sent to the container on its port 80
+	        means that whatever requests we sent on our local machine's port 8080 will be sent to the container on its port 80.
+
+**custom content in containers:
+•docker run -p 8080 --name=<name-of -coantainer> -v ${PWD}/webpages:/usr/share/nginx/html:ro -d nginx : To map to the volume where 
+													conatiner is stored.
+**enter and connect to a conatainer
+•docker run -it --name apache httpd /bin/bash : to open in an interactive terminal, when we exit the conatainer it will stop the 
+						conatainer.
+•docker run -dit --name apache httpd /bin/bash : the conatainer will run in background.
+•docker exec <image-id> -it /bin/bash :to enter the container that is running in background. 
