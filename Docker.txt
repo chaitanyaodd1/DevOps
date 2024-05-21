@@ -1,0 +1,49 @@
+⁂ DOCKER
+'''''''''
+• Docker is an open-source platform that enables developers to build, deploy, run, update, and manage standardized,
+  executable components called containers. These containers combine application source code with the necessary 
+  operating system libraries and dependencies required to run that code in any environment.
+
+
+• Runs as an application in a sandbox.
+• It's PORTABLE.
+• We can reun several conatainers on a machine at the same time.
+• Self-conatined: do not alter host system.
+•"IF SOMETHING WORKS IN DEVELOPMENT, IT WILL WORK IN PRODUCTION"
+
+
+
+Commands:
+'''''''''
+
+
+•docker run <CONATAINER> : Container will start and immediatly stop automatically.
+•docker run -dit <CONATAINER>:Conatiner will stat and keep running in the background(detached)... To stop this, we will 
+			     need to use docker conatainer stop command
+•docker run -it <CONATAINER>:Container will start in an interactive terminal mode (it will open a 
+			    shell inside the conatainer)... To stop this, we will need to use exit 
+			    command.	
+•docker container list: list of all conatiners.
+•docker ps: list of running conatiners.
+•docker stop <ID>or <NAME>
+•docker images or docker image list : see the list of image.
+•docker inspect: Inspect a conatiner.
+•docker pull : pull an image(From dockerhub).
+•docker history<image>: how was the images created.
+•docker tag
+
+•docker rmi <image-name>: untag the image {not free}.
+•docker image prune: Image is removed {free}.
+•docker system df: How much space is docker using.
+•docker conatainer prune: Remove stopped containers from the disk.
+
+•docker run -dit --name=<personal-name> <image-name>:give personalized name to comnatainer 
+•docker start <conatainer-name>: start stopped conatainer.
+•docker stop <conatainer-name>: stop running conatainer.
+•docker run -dit --restart=always --name=<image-name> <image>:to set to always restart conatiner in case of accidental shutdown
+•docker run --rm <image>:to run and stop the conatiner immidietly.
+•docker logs <conatainer_id>: show inside the conatainer {kind of}.
+
+•docker run --name <name-of-conatiner> -d -p 8080:80 image {like nginx, tomcat, portainer...}: map the conatainer's internal port 
+                         								       80 to the external port 8080. It 
+ means that whatever requests we sent on our local machine's port 8080 will be sent to the container on its port 80
