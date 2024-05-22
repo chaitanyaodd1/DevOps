@@ -56,3 +56,37 @@ Commands:
 						conatainer.
 •docker run -dit --name apache httpd /bin/bash : the conatainer will run in background.
 •docker exec <image-id> -it /bin/bash :to enter the container that is running in background. 
+
+
+⁂Dockerfile: Contains instruction that we want to give to Docker for building an image.
+** Create a Dockerfile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+⁂Docker Compose : It is a Docker toll used to define and run multi-conatainer application
+
+steps for using Docker compose
+• Creating Dockerfile for defining application enviroment while building the Docker image.
+• Define services for the application in Docker-compose.yaml file.
+• Run 'docker-compose up' to start , 'docker-compose down' to stop.
+
+
+
+docker compose ----->docker-compose.yml---->{dockerfile(optional}
+
+
+
+
