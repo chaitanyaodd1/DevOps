@@ -136,6 +136,22 @@ Types of conatiner that we run:
    => Not use '-it'
 
 
+Prometheus												15:03 28-05-2024
+''''''''''
+→ Monitoring and alerting tool.
+→ Allows analysis of application and infrastructure.
+→ written in 'GO'.
+→ Uses mutli-dimensional data time-series iusing time series data.
+→ uses metric name and key-value pair.
+→ works on single node.
+
+
+Chef/Puppet
+'''''''''''
+
+
+
+
 
 
 
