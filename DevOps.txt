@@ -41,11 +41,12 @@ Version Control: Version control, also known as source control, is the practice 
 Repository: A Centralised storage for managing and tracking changes to the collection of the files and
 	    directories.
 
-			Developer push the code to a repository
-					||
-			code will be deployed from the repository
-
-	•) now if someone wants the code he/she will have to fetch the code from Repository
+				Developer push the code to a repository
+						||
+				code will be deployed from the repository
+						||
+			•) now if someone wants the code he/she will have to 
+				  fetch the code from Repository
 						||
 					      modify
 						||
@@ -148,7 +149,17 @@ Prometheus												15:03 28-05-2024
 
 Chef/Puppet
 '''''''''''
+→ Imperative: writing a detailed script, very detailed structure, step-by-step, how to do each step
+	       is specified.
+→ Declarative: only what to do is specified. Following are the two types of model:
+		→ push model
+		→ pull model 
 
+Chef:- •) written in RUBY 
+`````  •) Two models: Server-client
+		      Standalone [Called Chef Zero]
+
+		
 
 
 
