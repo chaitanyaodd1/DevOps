@@ -7,7 +7,7 @@
 
 • Runs as an application in a sandbox.
 • It's PORTABLE.
-• We can reun several conatainers on a machine at the same time.
+• We can run several conatainers on a machine at the same time.
 • Self-conatined: do not alter host system.
 •"IF SOMETHING WORKS IN DEVELOPMENT, IT WILL WORK IN PRODUCTION"
 
@@ -15,8 +15,6 @@
 
 Commands:
 '''''''''
-
-
 •docker run <CONATAINER> : Container will start and immediatly stop automatically.
 •docker run -dit <CONATAINER>:Conatiner will stat and keep running in the background(detached)... To stop this, we will 
 			     need to use docker conatainer stop command
@@ -59,22 +57,19 @@ Commands:
 
 
 ⁂Dockerfile: Contains instruction that we want to give to Docker for building an image.
-** Create a Dockerfile
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+** Create a Dockerfile and name it "Dockerfile"
+•A Dockerfile conatains the following:
+  →COPY and ADD: Copy files and directories from the host machine into the image.
+  →CMD: Specifies the default command to run when a container is started from the image.
+  →ENTRYPOINT: Similar to CMD, but it’s not overridden by command-line arguments.
+  →ENV: Sets environment variables within the image.
+  →EXPOSE: Describes which ports your application is listening on.
+  →WORKDIR: Sets the working directory for subsequent instructions.
+  →VOLUME: Creates volume mounts for data persistence.
+  →LABEL: Adds metadata to the image (e.g., version, description).
+  →HEALTHCHECK: Checks a container’s health on startup.
+  →USER: Sets the user and group ID for running commands.
+  →ONBUILD: Specifies instructions for when the image is used as a base in another Dockerfile. 
 
 ⁂Docker Compose : It is a Docker toll used to define and run multi-conatainer application
 
@@ -84,9 +79,10 @@ steps for using Docker compose
 • Run 'docker-compose up' to start , 'docker-compose down' to stop.
 
 
-
-docker compose ----->docker-compose.yml---->{dockerfile(optional}
-
+ _________________________________________________________________
+|								  |
+|docker compose ----->docker-compose.yml---->{dockerfile(optional}|
+|_________________________________________________________________|								  |
 
 
 
